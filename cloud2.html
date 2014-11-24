@@ -1,0 +1,54 @@
+<html>
+<body>
+  <canvas id="the_canvas" width="400" height="400"></canvas>
+  <script>
+  var canvas = document.getElementById('the_canvas');
+  var ctx = canvas.getContext('2d');
+
+  //blue sky
+  ctx.fillStyle = "rgba(64,237,255,.5)";
+  ctx.fillRect(0,0, canvas.width, canvas.height);
+  //cloud left-bottom
+  ctx.beginPath();
+  ctx.arc(100,200,50,0,Math.PI*2,true);
+  ctx.fillStyle = "white";
+  ctx.fill();
+  ctx.lineWidth = .8;
+  ctx.strokeStyle = "white";
+  ctx.stroke();
+  //cloud mid-bottom
+  ctx.beginPath();
+  ctx.arc(170,200,50,0,Math.PI*2,true);
+  ctx.fillStyle = "white";
+  ctx.fill();
+  ctx.lineWidth = .8;
+  ctx.strokeStyle = "white";
+  ctx.stroke();
+  //cloud right-bottom
+  ctx.beginPath();
+  ctx.arc(240,200,50,0,Math.PI*2,true);
+  ctx.fillStyle = "white";
+  ctx.fill();
+  ctx.lineWidth = .8;
+  ctx.strokeStyle = "white";
+  ctx.stroke();
+  //cloud left-top
+  ctx.beginPath();
+  ctx.arc(135,150,50,0,Math.PI*2,true);
+  ctx.fillStyle = "white";
+  ctx.fill();
+  ctx.lineWidth = .8;
+  ctx.strokeStyle = "white";
+  ctx.stroke();
+  //cloud right-top
+  ctx.beginPath();
+  ctx.arc(205,150,50,0,Math.PI*2,true);
+  ctx.fillStyle = "white";
+  ctx.fill();
+  ctx.lineWidth = .8;
+  ctx.strokeStyle = "white";
+  ctx.stroke();
+
+</script>
+</body>
+</html>
